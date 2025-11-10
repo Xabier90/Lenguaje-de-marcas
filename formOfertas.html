@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurricuMT</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .caja {
+            text-align: center;
+            width: 1000px;
+            height: 250px;
+            box-shadow: 30px 20px 10px black;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            margin-left: 275px;
+            margin-top: 20px;
+            padding: 20px;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .par {
+            width: 950px;
+            height: 200px;
+            margin: 25px;
+            padding: 10px;
+        }
+
+        .of {
+            margin: 15px;
+        }
+
+        .ancho {
+            width: 450px;
+        }
+
+        .sub {
+            padding: 10px 20px;
+            background-color: #3e2661;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px;
+        }
+        .rd{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Empresa contratante</h1><br>
+    <form action="https://echo.free.beeceptor.com" method="post">
+    
+    <h2> Descripción</h2>
+    <div class="caja">
+        <textarea name="descripción" id="descripcion" class="par"></textarea>
+    </div>
+    <h2> Funciones</h2>
+    <div class="caja">
+        <textarea name="funciones" id="funciones" class="par"></textarea>
+    </div>
+    <h2> Que se ofrece</h2>
+    <div class="caja">
+
+        <fieldset>
+            <div class="of">
+                <label for="trabajadores" class="lab2"><b>Número de vacantes:</b> </label>
+                <input type="number" name="trabajadores" id="trabajadores" min="1" max="100" value=""><br>
+            </div>
+            <div class="of">
+                <label><b>Tipo de jornada:</b></label>
+                Completa<input type="radio" name="completa" value="completa">
+                Parcial<input type="radio" name="parcial" value="parcial"><br>
+            </div>
+            <div class="of">
+                <label for="tipo de contrato"><b>Tipo de contrato: </b></label>
+                <select name="tipoContrato" id="tipoContrato">
+                    <option value="Default" selected>Contrato</option>
+                    <option value="format">Contrato formativo</option>
+                    <option value="inde">Contrato indefinido</option>
+                    <option value="temp">Contrato temporal</option>
+                    <option value="Otro">Otro tipo</option>
+                </select><br>
+            </div>
+            <div class="of">
+                <label><b>Tipo de horario</b></label><br>
+                Horario continuo<input type="radio" name="continuo" value="continuo" class="rd">
+                Horario partido<input type="radio" name="partido" value="partido" class="rd">
+                3 Turnos<input type="radio" name="3turnos" value="3turnos" class="rd">
+                4 Turnos<input type="radio" name="4turnos" value="4turnos" class="rd">
+                5 Turnos<input type="radio" name="5turnos" value="5turnos" class="rd">
+                otro horario<input type="radio" name="otro" value="otro" class="rd"><br>
+            </div>
+            <div class="of">
+                <label for=""><b>Sueldo:</b></label>
+                <input type="text" placeholder="Sueldo no disponible" name="sueldo" id="sueldo">
+            </div>
+        </fieldset>
+
+    </div>
+    <h2>Requisitos</h2>
+    <div class="caja">
+
+        <div class="of">
+            <label for="expMin"><b>Experiencia minima:</b> </label>
+            <input type="number" name="expMin" id="expMin" min="1" max="30" value=""> años<br>
+        </div>
+        <div class="of">
+            <label><b>Disponibilidad:</b></label>
+            Inmediata<input type="radio" name="inmediata" value="inmediata">
+            No Urge<input type="radio" name="noUrge" value="noUrge"><br>
+        </div>
+        <div class="of">
+            <label for="tipo de contrato"><b>Estudios minimos: </b></label>
+            <select name="estMin" id="estMin">
+                <option value="Default" selected>Sin estudios</option>
+                <option value="format">Bachiller</option>
+                <option value="inde">FP grado medio</option>
+                <option value="temp">FP grado superior</option>
+                <option value="Otro">Titulo universitario</option>
+            </select><br>
+        </div>
+        <div class="of">
+            <label for="Conocimientos"><b>Conocimientos necesarios</b></label><br>
+            <textarea name="Conocimientos" id="" class="ancho"></textarea>
+        </div>
+        <div class="of">
+            <label for=""><b>Otros requisitos</b></label><br>
+            <textarea name="or" id="or" class="ancho"></textarea>
+        </div>
+
+
+    </div>
+    
+    <input type="submit" value="Guardar" onclick="alert ('información Guardada. Nueva oferta creada.')" class="sub">
+
+    </form>
+</body>
+
+</html>

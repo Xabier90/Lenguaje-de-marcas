@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurricuMT</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .box {
+            text-align: left;
+            width: 1000px;
+            height: 250px;
+            box-shadow: 30px 20px 10px black;
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            margin-left: 275px;
+            margin-top: 20px;
+            padding: 20px;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .imagen {
+            float: left;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .b {
+            border-radius: 3px;
+            text-align: center;
+            margin-left: 45%;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .puesto {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        .empresa {
+            color: rgb(38, 38, 91);
+            text-decoration-line: underline;
+        }
+
+        .parrafo {
+            margin-left: 140px;
+            margin-bottom: 15px;
+        }
+
+        .datos {
+            color: rgb(81, 80, 99);
+            margin-bottom: 15px;
+            margin-left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ofertas de trabajo</h1>
+    <label for="">Sector de la oferta</label>
+    <select name="ambito laboral" id="ambitoLaboral" onchange="seleccionar()">
+        <option value="Default" selected>Ambito laboral</option>
+        <option value="I">Informática</option>
+        <option value="A">Administración-Finanzas</option>
+        <option value="M">Industri del metal</option>
+        <option value="Sal">Sector Sanitario</option>
+    </select>
+
+    <div class="box" id="box">
+        <img src="Logo empresa ejemplo.jpg" alt="foto" class="imagen">
+        <h2 class="puesto">Puesto ofertado</h2>
+        <h3 class="empresa">Empresa Contratante</h3>
+        <h4 class="datos">Localización de la empresa | Modalidad de trabajo (Presencial o Teletrabajo) | Antigüedad de
+            la oferta</h4>
+        <p class="parrafo">Explicación del puesto de trabajo, donde esta ubicada la empresa, <br>
+            las funciones principales del puesto (algo breve) </p>
+        <h4 class="datos">Tipo de contrato ofertado | Tipo de jornada | Salario</h4>
+        <a href="formOfertas.html"
+            onclick="alert ('Rellena el siguiente formulario para generar una nueva oferta')"><button class="b">Agregar
+                nueva oferta</button></a>
+    </div>
+    <div class="box" id="box1">
+        <img src="CAF.png" alt="foto" class="imagen">
+        <h2 class="puesto">Montador-Instalador</h2>
+        <h3 class="empresa">CAF (Construcciones y Auxiliar de Ferrocarriles)</h3>
+        <h4 class="datos">Beasain | Presencial | 2 dias</h4>
+        <p class="parrafo">Si te gusta la fabricación de estructuras metalicas, imagínate ensamblando piezas en el
+            mundo
+            de la automoción y el ferroviario. Encargarte de montar e instalar el chasis y todo el interior de un
+            tren
+            por todo el mundo. <br>
+            El nivel formativo que se requiere es de FPII (Automatización, Mantenimiento Industrial, Construcciones
+            Metálicas...) y con un nivel medio de inglés. Te ocuparás del ensamblaje completo de los Trenes y serás
+            responsable de que pasen todos los controles de calidad. </p>
+        <h4 class="datos">Contrato indefinido | Jornada completa - 3 turnos | Salario no disponible</h4>
+    </div>
+    <div class="box" id="box2">
+        <img src="Matia.png" alt="foto" class="imagen">
+        <h2 class="puesto">Tecnico/a de Farmacia</h2>
+        <h3 class="empresa">Matia Fundazioa</h3>
+        <h4 class="datos">Donostia-San Sebastián | Presencial | 5 dias</h4>
+        <p class="parrafo">Nuestro propósito es acompañar a las personas en su proceso de envejecimiento para
+            mejorar su
+            bienestar, generando conocimiento y servicio personalizados que promuevan su autonomía y dignidad. <br>
+            Funcines a desempeñar Preparar los pedidos de medicamentos y material sanitario. Recepción de pedidos y
+            medicamentos y entrada en el sistema de gestión.... </p>
+        <h4 class="datos"> Contrato temporal | Jornada parcial | Salario no disponible</h4>
+    </div>
+    <div class="box" id="box3">
+        <img src="CAF.png" alt="foto" class="imagen">
+        <h2 class="puesto">Gestor/a Ofertas de Compras</h2>
+        <h3 class="empresa">CAF (Construcciones y Auxiliar de Ferrocarriles)</h3>
+        <h4 class="datos">Beasain | mixto (4d Presencial, 1d Teletrabajar) | 1 semana</h4>
+        <p class="parrafo">Si quieres trabajar para conseguir un mundo más sostenible y responsable con su entorno, en
+            CAF trabajamos en la movilidad sostenible, uno de los principales retos a los que se enfrenta la sociedad
+            actual. <br>
+            Buscamos una persona que se incorpore al staff de compras en el negocio de vehículos. Tendrás que encargarte
+            del inventario-stock... </p>
+        <h4 class="datos">Contrato indefinido | Jornada completa | Salario no disponible</h4>
+    </div>
+    <div class="box" id="box4">
+        <img src="CSA logo.jpg" alt="foto" class="imagen">
+        <h2 class="puesto">Programador/a Python</h2>
+        <h3 class="empresa">CSA (Centro de Servicios Avanzados)</h3>
+        <h4 class="datos">Burgos | mixto (3d Presencial, 2d Teletrabajar) | 15 dias</h4>
+        <p class="parrafo">CSA, compañía que desarrolla su actividad como integrador de Sistemas de Información en los
+            campos de la Informática, Comunicaciones, Desarrollo de Software y Seguridad selecciona un/a Programador/a
+            Python con al menos 3 años de experiencia en desarrollo de aplicaciones Python. <br>
+            ¿Qué podemos ofrecerte? Incorporación estable con plan de carrera asociado y formación. Flexibilidad
+            horaria. Entre otras cosas </p>
+        <h4 class="datos"> Contrato indefinido | Jornada completa | 30.000€ Bruto/año</h4>
+    </div>
+    <div class="box" id="box5">
+        <img src="ISPROX logo.jpg" alt="foto" class="imagen">
+        <h2 class="puesto">Técnico/a Contabilidad y Finanzas</h2>
+        <h3 class="empresa">ISPROX</h3>
+        <h4 class="datos">Tárrega (Lleida) | mixto (3d Presencial, 2d Teletrabajar) | nuevo</h4>
+        <p class="parrafo">Desde ISPROX, seleccionamos para nuestro cliente, una empresa dedicada a la fabricación y
+            comercialización de equipos industriales, una oportunidad emocionante para un/a Técnico/a en Contabilidad y
+            Finanzas con inglés avanzado.
+            Si dispones de la titulación en ADE y posees un buen nivel de inglés, esto es para ti. </p>
+        <h4 class="datos">Contrato indefinido | Jornada completa | 24.000€-33.000€ Bruto/año</h4>
+    </div>
+    <div class="box" id="box6">
+        <img src="DomusVi logo.png" alt="foto" class="imagen">
+        <h2 class="puesto">Fisioterapeuta</h2>
+        <h3 class="empresa">Zaharren egoitza DomusVi</h3>
+        <h4 class="datos">Donostia San Sebastián | Presencial | 4 dias</h4>
+        <p class="parrafo">Contribuir a la mejora de la calidad de vida de los/as residentes mediante la rehabilitación
+            integral de sus discapacidades fisiológicas transitorias o permanentes, brindando una atención óptima de
+            acuerdo a las necesidades de cada persona. <br>
+            Se valorará positivamente la formación específica en geriatría o neurología, así como pilates. </p>
+        <h4 class="datos">Contrato indefinido | Jornada completa - Jornada Parcial | Salario no disponible</h4>
+    </div>
+    <div class="box" id="box7">
+        <img src="charifas logo.png" alt="foto" class="imagen">
+        <h2 class="puesto">Social / Community Manager</h2>
+        <h3 class="empresa">Las charifas S.A.</h3>
+        <h4 class="datos">Santa Cruz de Tenerife | Teletrabajar | 3 dias</h4>
+        <p class="parrafo">Gestionar la presencia digital y la comunidad online de Chafiras, creando contenido atractivo
+            y relevante que refuerce la identidad de marca y apoye las acciones comerciales y de comunicación en los
+            distintos canales digitales. <br>
+            Funciones:Planificar, crear y programar contenido para redes sociales y otros canales digitales (Facebook,
+            Instagram, LinkedIn...).
+            Gestionar la comunidad online. Coordinar y ejecutar campañas digitales. Entre otras. </p>
+        <h4 class="datos">Contrato indefinido | Jornada completa | Salario no disponible</h4>
+    </div>
+    <div class="box" id="box8">
+        <img src="Veiru logo.jpg" alt="foto" class="imagen">
+        <h2 class="puesto">FRESADOR CNC MECANIZADO AERONÁUTICO</h2>
+        <h3 class="empresa">Veiru S.L.U.</h3>
+        <h4 class="datos">Meco (Madrid) | Presencial | 12 dias</h4>
+        <p class="parrafo">FRESADOR CNC en 3, 4 y 5 ejes. Disponibilidad de incorporación inmediata (15 días
+            preaviso)<br>
+            EL SALARIO DE ESTA OFERTA CORRESPONDE A ESTAR DE LUNES A VIERNES EN TURNOS DE 8h A TRES TURNOS PARA
+            PREPARADOR AJUSTADOR TOTALMENTE INDEPENDIENTE CON UN MÍNIMO DE 3 AÑOS DE EXPERIENCIA </p>
+        <h4 class="datos">Contrato indefinido | Jornada completa (3 turnos) | 27.000€ - 36.000€ Bruto/año</h4>
+    </div>
+
+    <script>
+        // Para que al seleccionar en el menu una de las opciones solo aparezcan las ofertas de ese sector.
+        function seleccionar() {
+            const menu = document.getElementById("ambitoLaboral");
+            const a = document.getElementById("box");
+            const a1 = document.getElementById("box1");
+            const a2 = document.getElementById("box2");
+            const a3 = document.getElementById("box3");
+            const a4 = document.getElementById("box4");
+            const a5 = document.getElementById("box5");
+            const a6 = document.getElementById("box6");
+            const a7 = document.getElementById("box7");
+            const a8 = document.getElementById("box8");
+            const espacio1 = document.getElementById("box1");
+            const espacio2 = document.getElementById("box2");
+            const valorSeleccionado = menu.value;
+
+            if (valorSeleccionado == "I") {
+                a1.innerHTML = a4.innerHTML;
+                a2.innerHTML = a7.innerHTML;
+                a3.textContent = "";
+                a4.textContent = "";
+                a5.textContent = "";
+                a6.textContent = "";
+                a7.textContent = "";
+                a8.textContent = "";
+            }
+            else if (valorSeleccionado == "A") {
+                a1.innerHTML = a3.innerHTML;
+                a2.innerHTML = a5.innerHTML;
+                a3.textContent = "";
+                a4.textContent = "";
+                a5.textContent = "";
+                a6.textContent = "";
+                a7.textContent = "";
+                a8.textContent = "";
+            }
+            else if (valorSeleccionado == "M") {
+
+                a1.innerHTML = a1.innerHTML;
+                a2.innerHTML = a8.innerHTML;
+                a3.textContent = "";
+                a4.textContent = "";
+                a5.textContent = "";
+                a6.textContent = "";
+                a7.textContent = "";
+                a8.textContent = "";
+            }
+            else if (valorSeleccionado == "Sal") {
+                a1.innerHTML = a2.innerHTML;
+                a2.innerHTML = a6.innerHTML;
+                a3.textContent = "";
+                a4.textContent = "";
+                a5.textContent = "";
+                a6.textContent = "";
+                a7.textContent = "";
+                a8.textContent = "";
+            }
+            else {
+                // Si la opción es la inicial 
+                a1.innerHTML = a1.innerHTML
+                a2.innerHTML = a2.innerHTML
+                a3.innerHTML = a3.innerHTML
+                a4.innerHTML = a4.innerHTML
+                a5.innerHTML = a5.innerHTML
+                a6.innerHTML = a6.innerHTML
+                a7.innerHTML = a7.innerHTML
+                a8.innerHTML = a8.innerHTML
+
+            }
+        }
+        // Esto lo he tenido que mirar como se hacia.
+        // Seleccionar todos los elementos con la clase 'box'
+        const cursor = document.querySelectorAll(".box");
+        const clrn = "grey";
+
+        // Iterar sobre cada box y añadirle los event listeners
+        cursor.forEach(box => {
+            // Evento al pasar el ratón por encima
+            box.addEventListener('mouseover', () => {
+                // Cambiar el color de todos los bloques
+                box.style.backgroundColor = clrn;
+            });
+            // Evento al retirar el ratón (para volver al color original si lo necesitas)
+            box.addEventListener('mouseout', () => {
+                box.style.backgroundColor = "blanchedalmond";
+
+            });
+        });
+
+        // También he consultado como hacer esto.
+        // Selecciona la caja que quieres que haga la función de botón
+        const oferta_matia = document.getElementById("box2");
+
+        // Añade un listener para el evento click
+        oferta_matia.addEventListener("click", function () {
+            // Redirige a la nueva página al hacer clic
+            window.location.href = "ofertamatia.html";
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
